@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<!-- ── BLOG ── -->
+<section id="blog">
+    <div class="section-label">Blog</div>
+
+    {% for post in site.posts %}
+    <article class="blog-post">
+        <a href="{{ post.url }}">
+            <div class="post-meta">
+                <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                <span class="post-tag">{{ post.tag }}</span>
+            </div>
+            <h3 class="post-title">{{ post.title }}</h3>
+            <p class="post-excerpt">{{ post.excerpt_text }}</p>
+            <span class="read-more">Read &rarr;</span>
+        </a>
+    </article>
+    {% endfor %}
+
+</section>

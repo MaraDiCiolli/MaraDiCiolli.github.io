@@ -1,0 +1,7 @@
+title: "Mara Di Ciolli"
+description: "Geotechnical Engineer & Rock Enthusiast"
+url: "https://maradiciolli.github.io"
+baseurl: ""
+permalink: /blog/:slug/
+
+markdown: kramdown

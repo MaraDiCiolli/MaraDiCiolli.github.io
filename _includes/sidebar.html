@@ -1,0 +1,12 @@
+<aside class="post-sidebar">
+    <div class="sidebar-label">All Posts</div>
+    <ul class="sidebar-posts">
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}"{% if post.url == page.url %} class="current"{% endif %}>{{ post.title }}
+                <span class="sidebar-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</aside>
